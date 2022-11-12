@@ -17,21 +17,17 @@ public class JavaApplication1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String nama;
-        int umur;
         // TODO code application logic here
         Scanner sc = new Scanner(System.in);
         person person = new person();
-        System.out.println("Silakan input nama anda : ");
-        nama = sc.nextLine();
-        System.out.println("Silakan input nama anda : ");
-        umur = sc.nextInt();
+        System.out.println("Input your name : ");
+        person.name = sc.nextLine();
+        System.out.println("Input your age : ");
+        person.age = sc.nextInt();
         System.out.print("Input weight in kilogram: ");
         person.weight = sc.nextDouble();
-        System.out.print("Input height in kilogram: ");
+        System.out.print("Input height in meter: ");
         person.height = sc.nextDouble();
-        System.out.println("Namamu adalah :" + nama);
-        System.out.println("umurmu : " + umur);
         person.calculateBMI();
 
     }

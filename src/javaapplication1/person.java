@@ -10,11 +10,16 @@ package javaapplication1;
  * @author USER
  */
 public class person {
-    double height, weight,hasil;
+    double height, weight,result;
+    String name;
+    int age;
     
     void calculateBMI(){
-        hasil = weight / height * height;
-        System.out.println("Your Body Mass Index (BMI) is : " + hasil);
+        result = weight / (height * height);
+        
+        System.out.println("Name :" + name);
+        System.out.println("Your Age : " + age);
+        System.out.println("Your Body Mass Index (BMI) is : " + result);
         //Check kamu termasuk masuk pada
         
     }
